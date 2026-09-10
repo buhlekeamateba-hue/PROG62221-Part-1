@@ -189,6 +189,10 @@ The project was developed using Git and GitHub.
 
 Meaningful commits were used to document the development process, including project setup, implementation of the chatbot features, audio integration, testing, and CI configuration.
 
+## Video Presentation
+
+https://youtu.be/q3H8bFSODfQ
+
 ## Author
 
 Name: Sentle Mateba
