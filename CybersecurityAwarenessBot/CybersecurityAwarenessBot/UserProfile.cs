@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CybersecurityAwarenessBot
 {
-    internal class UserProfile
+    public class UserProfile
     {
         //stores the user's name
         public string Name { get; set; } = "";
