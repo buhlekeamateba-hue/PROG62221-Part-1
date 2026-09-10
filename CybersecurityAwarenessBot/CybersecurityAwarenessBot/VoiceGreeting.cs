@@ -3,7 +3,7 @@
 
 namespace CybersecurityAwarenessBot
 {
-    internal class VoiceGreeting
+    public class VoiceGreeting
     {
         public void PlayGreeting()
         {

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "My2+dqlyIG8=",
+  "dgSpecHash": "sRs7qnnpcFs=",
   "success": true,
   "projectFilePath": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\buhle\\.nuget\\packages\\system.windows.extensions\\10.0.12\\system.windows.extensions.10.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
