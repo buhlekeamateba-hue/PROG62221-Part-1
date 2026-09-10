@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\responsehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\responsehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\asciiart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\asciiart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\cybersecurityawarenessbot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\cybersecurityawarenessbot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|c:\\users\\buhle\\documents\\prog62221-part-1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F8CE35-A8C7-4F38-BA7E-E9C5A5E21F32}|CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj|solutionrelative:cybersecurityawarenessbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsciiArt.cs",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\AsciiArt.cs",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\AsciiArt.cs",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\AsciiArt.cs",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\AsciiArt.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:43:31.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResponseHandler.cs",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\ResponseHandler.cs",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\ResponseHandler.cs",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\ResponseHandler.cs",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\ResponseHandler.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:44:01.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\Program.cs",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\Program.cs",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\Program.cs",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:34:52.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\UserProfile.cs",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\UserProfile.cs",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:51:04.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VoiceGreeting.cs",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\VoiceGreeting.cs",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\VoiceGreeting.cs",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\VoiceGreeting.cs",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\VoiceGreeting.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:42:24.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CybersecurityAwarenessBot",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\CybersecurityAwarenessBot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-10T16:20:46.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Chatbot.cs",
+              "DocumentMoniker": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\Chatbot.cs",
+              "RelativeDocumentMoniker": "CybersecurityAwarenessBot\\Chatbot.cs",
+              "ToolTip": "C:\\Users\\buhle\\Documents\\PROG62221-Part-1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\Chatbot.cs",
+              "RelativeToolTip": "CybersecurityAwarenessBot\\Chatbot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:40:28.317Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
