@@ -1,200 +1,167 @@
-# PROG62221-Part-1
-# Cybersecurity Awareness Bot
+# PROG6221 Programming 2A - POE Part 2
 
-## PROG6221 – Programming 2A
+## Student Details
 
-A C# .NET 8.0 console application designed to help South African citizens learn basic cybersecurity practices through an interactive, rule-based chatbot.
+- **Name:** Sentle Mateba
+- **Student Number:** ST10500205
+- **Module:** PROG6221 - Programming 2A
+- **Project Name:** Cybot - Cybersecurity Awareness Chatbot
 
 ## Project Overview
 
-The Cybersecurity Awareness Bot is an interactive console application that provides users with basic cybersecurity information and awareness tips.
+Cybot is a Cybersecurity Awareness Chatbot created for PROG6221 Part 2.
 
-The application allows users to enter their name and interact with the chatbot using natural questions and keywords. It provides information about password safety, phishing scams, and safe browsing, while also handling general questions and invalid input.
+The project expands the Part 1 console application into a Windows Forms graphical user interface. Cybot helps users learn about password safety, phishing, online scams, privacy, malware, and safe browsing.
 
-The application was developed using C# and object-oriented programming principles.
+## Part 1 Features Carried Forward
 
-## Features
+- WAV voice greeting
+- Cybot cybersecurity branding
+- Personalised user-name greeting
+- Cybersecurity guidance
+- Password, phishing, and safe-browsing responses
+- Input validation
+- Structured classes and methods
 
-* Voice greeting played when the application starts
-* Custom cybersecurity-themed ASCII header
-* Console colours for an improved user interface
-* User name input and validation
-* Personalised chatbot responses
-* Case-insensitive user input
-* Keyword-based response system
-* Cybersecurity information covering:
+## Part 2 Features
 
-  * Password Safety
-  * Phishing Scams
-  * Safe Browsing
-* Responses to general questions such as:
+- Windows Forms graphical user interface
+- Voice greeting plays when the application opens
+- Cybot ASCII-style cybersecurity banner
+- Personalised conversation using the user's name
+- Keyword recognition for cybersecurity topics
+- Random responses using a dictionary and lists
+- Conversation flow for follow-up questions
+- Memory for the user's name, current topic, and favourite topic
+- Sentiment detection for worried, curious, and frustrated messages
+- Safe handling of blank and unknown input
+- Delegate used to display chatbot responses in the GUI
+- Send button and Enter-key support
 
-  * How are you?
-  * What's your purpose?
-  * What can I ask you about?
-* Input validation for blank questions
-* Fallback responses for unsupported questions
-* `exit` and `quit` commands to end the conversation
-* Modular object-oriented class structure
-* GitHub version control
-* Automated CI build using GitHub Actions
+## GUI Overview
 
-## Technologies Used
+The Cybot GUI includes:
 
-* C#
-* .NET 8.0
-* Visual Studio
-* Git
-* GitHub
-* GitHub Actions
+- A cybersecurity-themed banner
+- A chat-history area
+- A text box for user messages
+- A Send button
+- A status message showing supported topics
+- Coloured user and Cybot messages
+
+## Cybersecurity Topics Supported
+
+- Password safety
+- Phishing
+- Online scams
+- Privacy
+- Safe browsing
+- Malware
+
+## Example Questions
+
+    Tell me about password safety.
+    What is phishing?
+    I am worried about scams.
+    How can I protect my privacy?
+    Tell me more.
+    I am interested in privacy.
+    What is my favourite topic?
+
+## Memory and Sentiment Features
+
+Cybot remembers:
+
+- The user's name
+- The current cybersecurity topic
+- The user's favourite cybersecurity topic
+
+Cybot detects simple sentiments, including:
+
+- Worried
+- Scared
+- Curious
+- Interested
+- Frustrated
+- Annoyed
+
+Example:
+
+    You > I am worried about scams.
+
+    Cybot > I understand that this can feel worrying.
+            Cybot gives a useful scam safety tip.
+
+## How to Run the Project
+
+1. Clone or download this repository.
+2. Open the solution file in Visual Studio 2022.
+3. Set `CybersecurityChatbotGUI` as the startup project.
+4. Confirm that `greeting.wav` is inside the `Assets` folder.
+5. Select `greeting.wav` and set Build Action to `Content`.
+6. Set Copy to Output Directory to `Copy if newer`.
+7. Build the solution using `Ctrl + Shift + B`.
+8. Run the application using `Ctrl + F5`.
+9. Enter your name when Cybot asks for it.
+10. Ask Cybot a cybersecurity question.
 
 ## Project Structure
 
-```text
-A1/
-│
-├── Audio/
-│   └── greeting.wav
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-│
-├── Program.cs
-├── Chatbot.cs
-├── UserProfile.cs
-├── VoiceGreeting.cs
-├── AsciiArt.cs
-├── ResponseHandler.cs
-└── README.md
-```
+    CybersecurityChatbotSolution
+    │
+    ├── CybersecurityAwarenessBot
+    │   └── Part 1 console application
+    │
+    └── CybersecurityChatbotGUI
+        ├── Program.cs
+        ├── ChatbotForm.cs
+        ├── ChatbotForm.Designer.cs
+        ├── ChatBot.cs
+        ├── KeywordResponder.cs
+        ├── MemoryStore.cs
+        ├── SentimentDetector.cs
+        ├── VoiceGreeting.cs
+        │
+        └── Assets
+            └── greeting.wav
 
-## Class Responsibilities
+## Testing
 
-### Program.cs
+| **Test** | **Expected Result** |
+|---|---|
+| Open the application | The GUI opens and the voice greeting plays |
+| Enter a name | Cybot welcomes the user by name |
+| Ask about passwords | Cybot gives password safety advice |
+| Ask about phishing or scams repeatedly | Cybot can give different valid responses |
+| Ask about privacy, then type “tell me more” | Cybot continues with privacy advice |
+| Say “I am interested in privacy” | Cybot remembers the interest |
+| Ask “What is my favourite topic?” | Cybot recalls the saved topic |
+| Type “I am worried about scams” | Cybot recognises sentiment and gives advice |
+| Send a blank message | Cybot requests a message without crashing |
+| Ask an unrelated question | Cybot gives a helpful fallback response |
 
-Acts as the entry point of the application and starts the chatbot.
+## GitHub Actions / Continuous Integration
 
-### Chatbot.cs
+GitHub Actions is used to restore and build the project automatically after pushes and pull requests.
 
-Manages the main conversation flow, user interaction, and execution of the chatbot.
+The workflow file is located at:
 
-### UserProfile.cs
+    .github/workflows/ci.yml
 
-Stores user information, including the user's name.
+A successful GitHub Actions build should show a green check mark in the repository's Actions tab.
 
-### VoiceGreeting.cs
+## Tags and Releases
 
-Locates and plays the `greeting.wav` audio file when the application starts.
-
-### AsciiArt.cs
-
-Displays the cybersecurity-themed ASCII header and controls the console presentation.
-
-### ResponseHandler.cs
-
-Processes the user's input and provides an appropriate response based on keywords and recognised questions.
-
-## Installation and Setup
-
-### Requirements
-
-Before running the application, ensure that the following are installed:
-
-* Visual Studio
-* .NET 8.0 SDK
-* Git (for version control)
-
-### Running the Application
-
-1. Clone or download the repository from GitHub.
-2. Open the project solution in Visual Studio.
-3. Ensure that `Audio/greeting.wav` is included in the project.
-4. Build the solution.
-5. Run the application using **Ctrl + F5** or the **Start Without Debugging** option.
-6. Enter your name when prompted.
-7. Ask the chatbot questions about cybersecurity.
-
-## Audio Setup
-
-The application uses a `.wav` audio file for the initial voice greeting.
-
-The audio file is stored in:
-
-```text
-Audio/greeting.wav
-```
-
-The file is configured in Visual Studio with:
-
-```text
-Build Action: Content
-Copy to Output Directory: Copy if newer
-```
-
-The application uses `System.Media.SoundPlayer` to play the greeting.
-
-## Example Interaction
-
-```text
-====================================================
-        CYBERSECURITY AWARENESS BOT
-====================================================
-
-        Stay Alert. Stay Safe. Stay Secure.
-====================================================
-
-What is your name?
-Sentle
-
-Hello, Sentle! How can I help you with cybersecurity today?
-
-You: How are you?
-
-Bot: I'm doing well, Sentle! I'm ready to help you learn
-about staying safe online.
-
-You: What is phishing?
-
-Bot: Phishing is a type of cyber scam where criminals
-pretend to be a trustworthy person or organisation to
-trick you into revealing sensitive information.
-
-You: exit
-
-Bot: Goodbye, Sentle! Stay safe online.
-```
-
-## Continuous Integration
-
-This project uses GitHub Actions to automatically build the application whenever changes are pushed to the repository.
-
-The CI workflow is located at:
-
-```text
-.github/workflows/ci.yml
-```
-
-A successful workflow run should display a green check mark in GitHub.
-
-## CI Build Screenshot
-
-The following screenshot shows a successful GitHub Actions CI build:
-
-**[Insert screenshot of the successful green CI check here]**
-
-## Version Control
-
-The project was developed using Git and GitHub.
-
-Meaningful commits were used to document the development process, including project setup, implementation of the chatbot features, audio integration, testing, and CI configuration.
+- **v2.0-gui** - Created the Windows Forms GUI and moved Part 1 features into the GUI.
+- **v2.1-dynamic-responses** - Added keyword recognition, random responses, and conversation flow.
+- **v2.2-memory-sentiment** - Added memory, sentiment detection, validation, and final polish.
 
 ## Video Presentation
 
-https://youtu.be/q3H8bFSODfQ
+Unlisted YouTube video link:
+
+[Add your Part 2 YouTube link here]
 
 ## Author
 
-Name: Sentle Mateba
-Module: PROG6221 – Programming 2A
-Year: 2026
+Sentle Mateba - PROG6221 Programming 2A
