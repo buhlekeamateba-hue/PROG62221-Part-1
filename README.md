@@ -160,7 +160,7 @@ A successful GitHub Actions build should show a green check mark in the reposito
 
 Unlisted YouTube video link:
 
-[Add your Part 2 YouTube link here]
+https://youtu.be/CsY7FEhq73s
 
 ## Author
 
