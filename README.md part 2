@@ -1,1 +1,63 @@
 
+# PROG6221 Programming 2A - POE Part 2
+
+## Student Details
+
+- Name: [Your full name]
+- Student Number: [Your student number]
+- Module: PROG6221 - Programming 2A
+- Project: Cybersecurity Awareness Chatbot
+
+## Project Overview
+
+This project is Part 2 of the Cybersecurity Awareness Chatbot POE. It expands the Part 1 console chatbot into a Windows Forms graphical user interface called Cybot.
+
+Cybot helps users learn about cybersecurity topics such as passwords, phishing, scams, privacy, malware, and safe browsing.
+
+## Part 2 Features
+
+- Windows Forms graphical user interface
+- Part 1 WAV voice greeting plays when the application opens
+- Cybot branding and ASCII-style cybersecurity banner
+- Personalised conversation using the user's name
+- Keyword recognition for cybersecurity topics
+- Random responses using `Dictionary<string, List<string>>`
+- Conversation flow for follow-up questions such as “tell me more”
+- Memory for the user's name, current topic, and favourite topic
+- Sentiment detection for worried, curious, and frustrated messages
+- Helpful handling of blank and unknown input
+- Delegate used to connect chatbot responses to the GUI
+- Coloured chat history with separate Cybot and user messages
+
+## GUI Overview
+
+The Windows Forms interface contains:
+
+- A cybersecurity-themed Cybot banner
+- A chat-history area displaying the conversation
+- A text box for user input
+- A Send button
+- Enter-key support for sending messages
+- A status message explaining supported topics
+
+## Cybersecurity Topics Supported
+
+Cybot can respond to questions about:
+
+- Password safety
+- Phishing
+- Online scams
+- Privacy
+- Safe browsing
+- Malware
+
+Example questions:
+
+```text
+Tell me about password safety.
+What is phishing?
+I am worried about scams.
+How can I protect my privacy?
+Tell me more.
+I am interested in privacy.
+What is my favourite topic?
