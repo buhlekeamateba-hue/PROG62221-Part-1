@@ -149,6 +149,8 @@ namespace CybersecurityChatbotGUI
         {
             // Starts from question 1 and resets the score.
             quizManager.StartQuiz();
+            activityLogger.Log("Cybersecurity quiz started");
+            DisplayRecentActivity(5);
 
             lblQuizFeedback.Text = "";
             btnSubmitAnswer.Enabled = true;
@@ -239,6 +241,10 @@ namespace CybersecurityChatbotGUI
             }
             else
             {
+                activityLogger.Log(
+    $"Quiz completed - score {quizManager.Score}/{quizManager.TotalQuestions}");
+
+                DisplayRecentActivity(5);
                 // Shows final score and feedback after question 12.
                 lblQuizFeedback.ForeColor = Color.LightGreen;
                 lblQuizFeedback.Text =
