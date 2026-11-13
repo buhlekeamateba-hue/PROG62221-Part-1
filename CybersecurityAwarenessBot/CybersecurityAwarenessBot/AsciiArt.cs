@@ -15,11 +15,11 @@ namespace CybersecurityAwarenessBot
         Console.ForegroundColor = ConsoleColor.Cyan;
 
             Console.WriteLine("============================================================");
-            Console.WriteLine("   _____ __   __ ____   ____ _ ______  ");
+            Console.WriteLine("   _____ __   __ ____   ____ ___ ___  ");
             Console.WriteLine("  / ____|\\ \\ / /|  _ \\ / __ \\__  _|");
-            Console.WriteLine(" | |      \\ V / | |_) | |  | | | | | ");
-            Console.WriteLine(" | |       > <   |  _ <| |  | | | | | ");
-            Console.WriteLine(" | |____  / . \\ | |_) | |__| | | | |  ");
+            Console.WriteLine(" | |      \\ V / | |_) | |  | | | |  ");
+            Console.WriteLine(" | |       > <   |  _ |> |  | | | |  ");
+            Console.WriteLine(" | |____  / . \\ | |_) | |__| | | |  ");
             Console.WriteLine("  \\_____|/_/ \\_\\|____/ \\____/ |_|   ");
             Console.WriteLine("============================================================");
             
