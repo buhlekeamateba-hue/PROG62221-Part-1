@@ -150,9 +150,7 @@ Important: `DatabaseConfig.cs` must not be committed when it contains a real MyS
 
 ## Video Demonstration
 
-Unlisted YouTube Video Link:
-
-Add your final Part 3 YouTube link here before submission.
+Unlisted YouTube Video Link: https://youtu.be/EOWzTq8PM9I
 
 ## Author
 
