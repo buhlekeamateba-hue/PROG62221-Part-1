@@ -42,6 +42,7 @@ namespace CybersecurityChatbotGUI
             // Creates the final Part 3 GUI layout.
             BuildInterface();
             AddQuizTab();
+            AddActivityTab();
 
             // Connects the Part 2 delegate to the chat display method.
             cybot.ResponseHandler = DisplayBotMessage;
@@ -52,14 +53,15 @@ namespace CybersecurityChatbotGUI
 
         private void ChatbotForm_Shown(object? sender, EventArgs e)
         {
-            // Plays the Part 1 WAV greeting.
             voiceGreeting.PlayGreeting();
 
-            // Displays Cybot's opening message.
             cybot.BeginConversation();
 
-            // Loads previously saved tasks from MySQL.
             LoadTasks();
+
+            // Records that Cybot has started.
+            activityLogger.Log("Cybot application started");
+            DisplayRecentActivity(5);
         }
 
         private void BuildInterface()
@@ -331,6 +333,16 @@ namespace CybersecurityChatbotGUI
             try
             {
                 int taskId = taskRepository.AddTask(task);
+                activityLogger.Log("Task added: " + task.Title);
+
+                if (task.ReminderDate.HasValue)
+                {
+                    activityLogger.Log(
+                        "Reminder set: " + task.Title +
+                        " - " + task.ReminderDate.Value.ToShortDateString());
+                }
+
+                DisplayRecentActivity(5);
 
                 SetTaskStatus($"Task added successfully. MySQL task ID: {taskId}", Color.LightGreen);
 
@@ -360,6 +372,8 @@ namespace CybersecurityChatbotGUI
             try
             {
                 taskRepository.MarkTaskCompleted(selectedTask.TaskId);
+                activityLogger.Log("Task completed: " + selectedTask.Title);
+                DisplayRecentActivity(5);
 
                 SetTaskStatus(
                     $"Task completed: {selectedTask.Title}",
@@ -397,6 +411,8 @@ namespace CybersecurityChatbotGUI
             try
             {
                 taskRepository.DeleteTask(selectedTask.TaskId);
+                activityLogger.Log("Task deleted: " + selectedTask.Title);
+                DisplayRecentActivity(5);
 
                 SetTaskStatus(
                     $"Task deleted: {selectedTask.Title}",
@@ -498,12 +514,19 @@ namespace CybersecurityChatbotGUI
                 return;
             }
 
+            // Shows the message in the chat history.
             DisplayUserMessage(userMessage);
 
             txtUserInput.Clear();
             txtUserInput.Focus();
 
-            // Keeps all existing Part 2 chatbot functionality available.
+            // Handles Part 3 commands before normal Part 2 chatbot questions.
+            if (TryHandlePart3Command(userMessage))
+            {
+                return;
+            }
+
+            // Keeps all previous Part 2 cybersecurity chat features working.
             cybot.ProcessInput(userMessage);
         }
 
