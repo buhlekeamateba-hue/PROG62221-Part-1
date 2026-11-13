@@ -1,167 +1,161 @@
-# PROG6221 Programming 2A - POE Part 2
+# Cybot – Cybersecurity Awareness Chatbot
 
-## Student Details
+## PROG6221 Programming 2A – Final POE
 
-- **Name:** Sentle Mateba
-- **Student Number:** ST10500205
-- **Module:** PROG6221 - Programming 2A
-- **Project Name:** Cybot - Cybersecurity Awareness Chatbot
+Cybot is a C# Windows Forms cybersecurity awareness chatbot created for the PROG6221 Programming 2A module. The application helps South African users learn safer online habits through an interactive chatbot, task manager, reminders, cybersecurity quiz, natural-language commands, and an activity log.
 
-## Project Overview
+## Features
 
-Cybot is a Cybersecurity Awareness Chatbot created for PROG6221 Part 2.
+### Part 1 Features
 
-The project expands the Part 1 console application into a Windows Forms graphical user interface. Cybot helps users learn about password safety, phishing, online scams, privacy, malware, and safe browsing.
+- Cybot cybersecurity chatbot.
+- Personalised greeting using the user's name.
+- Voice greeting using a `.wav` audio file.
+- Cybersecurity-themed visual branding.
+- Input validation for empty messages.
+- Password safety advice.
+- Phishing scam advice.
+- Safe browsing advice.
+- Unknown-question fallback response.
+- Object-oriented C# class structure.
 
-## Part 1 Features Carried Forward
+### Part 2 Features
 
-- WAV voice greeting
-- Cybot cybersecurity branding
-- Personalised user-name greeting
-- Cybersecurity guidance
-- Password, phishing, and safe-browsing responses
-- Input validation
-- Structured classes and methods
+- Windows Forms graphical user interface.
+- Chat history showing both user and Cybot messages.
+- Delegate used to send chatbot responses to the GUI.
+- Keyword recognition for cybersecurity questions.
+- Conversation memory.
+- Favourite cybersecurity topic memory.
+- Sentiment responses for messages such as “I am worried” or “I am happy”.
+- Randomised and helpful cybersecurity responses.
+- Cybot branding carried forward from Part 1.
 
-## Part 2 Features
+### Part 3 Features
 
-- Windows Forms graphical user interface
-- Voice greeting plays when the application opens
-- Cybot ASCII-style cybersecurity banner
-- Personalised conversation using the user's name
-- Keyword recognition for cybersecurity topics
-- Random responses using a dictionary and lists
-- Conversation flow for follow-up questions
-- Memory for the user's name, current topic, and favourite topic
-- Sentiment detection for worried, curious, and frustrated messages
-- Safe handling of blank and unknown input
-- Delegate used to display chatbot responses in the GUI
-- Send button and Enter-key support
+- MySQL database integration.
+- Persistent cybersecurity task manager.
+- Add cybersecurity tasks.
+- View saved tasks.
+- Mark selected tasks as complete.
+- Delete selected tasks.
+- Optional task reminders with date and time.
+- Tasks remain saved after the application closes and reopens.
+- Twelve-question cybersecurity quiz.
+- Multiple-choice and true/false quiz questions.
+- Immediate correct/incorrect feedback.
+- Final quiz score.
+- Natural-language processing for chatbot commands.
+- Activity Log showing recent user actions.
+- Commands such as:
+  - Add a task to update my password
+  - Remind me to review privacy settings tomorrow
+  - Show my tasks
+  - Start quiz
+  - What have you done for me?
 
-## GUI Overview
+## Technologies Used
 
-The Cybot GUI includes:
-
-- A cybersecurity-themed banner
-- A chat-history area
-- A text box for user messages
-- A Send button
-- A status message showing supported topics
-- Coloured user and Cybot messages
-
-## Cybersecurity Topics Supported
-
-- Password safety
-- Phishing
-- Online scams
-- Privacy
-- Safe browsing
-- Malware
-
-## Example Questions
-
-    Tell me about password safety.
-    What is phishing?
-    I am worried about scams.
-    How can I protect my privacy?
-    Tell me more.
-    I am interested in privacy.
-    What is my favourite topic?
-
-## Memory and Sentiment Features
-
-Cybot remembers:
-
-- The user's name
-- The current cybersecurity topic
-- The user's favourite cybersecurity topic
-
-Cybot detects simple sentiments, including:
-
-- Worried
-- Scared
-- Curious
-- Interested
-- Frustrated
-- Annoyed
-
-Example:
-
-    You > I am worried about scams.
-
-    Cybot > I understand that this can feel worrying.
-            Cybot gives a useful scam safety tip.
-
-## How to Run the Project
-
-1. Clone or download this repository.
-2. Open the solution file in Visual Studio 2022.
-3. Set `CybersecurityChatbotGUI` as the startup project.
-4. Confirm that `greeting.wav` is inside the `Assets` folder.
-5. Select `greeting.wav` and set Build Action to `Content`.
-6. Set Copy to Output Directory to `Copy if newer`.
-7. Build the solution using `Ctrl + Shift + B`.
-8. Run the application using `Ctrl + F5`.
-9. Enter your name when Cybot asks for it.
-10. Ask Cybot a cybersecurity question.
+- C#
+- .NET Windows Forms
+- Visual Studio 2022
+- MySQL Community Server
+- MySQL Workbench
+- MySql.Data NuGet package
+- GitHub
+- GitHub Actions
 
 ## Project Structure
 
-    CybersecurityChatbotSolution
-    │
-    ├── CybersecurityAwarenessBot
-    │   └── Part 1 console application
-    │
-    └── CybersecurityChatbotGUI
-        ├── Program.cs
-        ├── ChatbotForm.cs
-        ├── ChatbotForm.Designer.cs
-        ├── ChatBot.cs
-        ├── KeywordResponder.cs
-        ├── MemoryStore.cs
-        ├── SentimentDetector.cs
-        ├── VoiceGreeting.cs
-        │
-        └── Assets
-            └── greeting.wav
+- `ChatbotForm.cs` – Main Windows Forms interface.
+- `ChatBot.cs` – Cybot conversation logic and responses.
+- `VoiceGreeting.cs` – Plays the Part 1 greeting audio.
+- `Models` – Stores task, quiz, conversation, and activity data.
+- `Data` – Contains MySQL database configuration and task repository code.
+- `Services` – Contains quiz logic, NLP processing, and activity logging.
+- `Audio` – Contains the greeting `.wav` file.
+- `.github/workflows` – Contains the GitHub Actions CI workflow.
 
-## Testing
+## Database Setup
 
-| **Test** | **Expected Result** |
-|---|---|
-| Open the application | The GUI opens and the voice greeting plays |
-| Enter a name | Cybot welcomes the user by name |
-| Ask about passwords | Cybot gives password safety advice |
-| Ask about phishing or scams repeatedly | Cybot can give different valid responses |
-| Ask about privacy, then type “tell me more” | Cybot continues with privacy advice |
-| Say “I am interested in privacy” | Cybot remembers the interest |
-| Ask “What is my favourite topic?” | Cybot recalls the saved topic |
-| Type “I am worried about scams” | Cybot recognises sentiment and gives advice |
-| Send a blank message | Cybot requests a message without crashing |
-| Ask an unrelated question | Cybot gives a helpful fallback response |
+1. Install MySQL Community Server and MySQL Workbench.
+2. Create a MySQL connection using:
+   - Host: `localhost`
+   - Port: `3306`
+   - User: `root`
+3. Run the following SQL script in MySQL Workbench:
 
-## GitHub Actions / Continuous Integration
+    CREATE DATABASE IF NOT EXISTS CyberSecurityBotDB;
 
-GitHub Actions is used to restore and build the project automatically after pushes and pull requests.
+    USE CyberSecurityBotDB;
 
-The workflow file is located at:
+    CREATE TABLE IF NOT EXISTS cyber_tasks
+    (
+        task_id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(150) NOT NULL,
+        description VARCHAR(500) NOT NULL,
+        reminder_date DATETIME NULL,
+        is_completed BOOLEAN NOT NULL DEFAULT FALSE,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
 
-    .github/workflows/ci.yml
+4. In `DatabaseConfig.cs`, enter your own local MySQL password:
 
-A successful GitHub Actions build should show a green check mark in the repository's Actions tab.
+    Pwd=YOUR_MYSQL_PASSWORD;
 
-## Tags and Releases
+5. Do not upload your real password to GitHub.
 
-- **v2.0-gui** - Created the Windows Forms GUI and moved Part 1 features into the GUI.
-- **v2.1-dynamic-responses** - Added keyword recognition, random responses, and conversation flow.
-- **v2.2-memory-sentiment** - Added memory, sentiment detection, validation, and final polish.
+## How to Run the Application
 
-## Video Presentation
+1. Clone or download this repository.
+2. Open the solution in Visual Studio 2022.
+3. Install the `MySql.Data` NuGet package if it is not already installed.
+4. Configure your MySQL password in `DatabaseConfig.cs`.
+5. Ensure `greeting.wav` is in the `Audio` folder.
+6. Build the solution.
+7. Run the application using the green Start button.
 
-Unlisted YouTube video link:
+## Testing Performed
 
-https://youtu.be/CsY7FEhq73s
+The following features were tested:
+
+- Entering a valid name.
+- Empty chat input validation.
+- Password safety questions.
+- Phishing scam questions.
+- Safe browsing questions.
+- Favourite topic memory.
+- Adding a task manually.
+- Adding a task through chatbot natural-language commands.
+- Setting a task reminder.
+- Completing a selected task.
+- Deleting a selected task.
+- Checking MySQL task persistence after restarting the application.
+- Completing the cybersecurity quiz.
+- Viewing final quiz score.
+- Viewing recent Activity Log entries.
+- Using natural-language commands to open Tasks, Quiz, and Activity Log.
+
+## GitHub Version Control
+
+This project uses GitHub for version control and GitHub Actions for continuous integration.
+
+Important: `DatabaseConfig.cs` must not be committed when it contains a real MySQL password.
+
+## Releases and Tags
+
+- `v1.0-part1` – Console chatbot implementation.
+- `v2.0-part2` – Windows Forms GUI chatbot implementation.
+- `v3.0-final` – Final POE with MySQL tasks, quiz, NLP, and activity log.
+
+## Video Demonstration
+
+Unlisted YouTube Video Link:
+
+Add your final Part 3 YouTube link here before submission.
 
 ## Author
 
-Sentle Mateba - PROG6221 Programming 2A
+Buhle
+PROG6221 Programming 2A
+2026
