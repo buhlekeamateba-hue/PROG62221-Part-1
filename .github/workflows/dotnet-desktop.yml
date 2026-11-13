@@ -9,20 +9,25 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      # Downloads your repository files onto GitHub's build computer.
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Installs .NET 8 for your Cybot console application.
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
 
-      # Downloads any project dependencies, such as System.Windows.Extensions.
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Find, restore, and build C# projects
+        shell: pwsh
+        run: |
+          $projects = @(Get-ChildItem -Path $env:GITHUB_WORKSPACE -Recurse -Filter *.csproj)
 
-      # Builds Cybot in Release mode.
-      - name: Build project
-        run: dotnet build --no-restore --configuration Release
+          if ($projects.Count -eq 0) {
+            throw "No .csproj project file was found in this repository."
+          }
+
+          foreach ($project in $projects) {
+            Write-Host "Building: $($project.FullName)"
+            dotnet restore $project.FullName
+            dotnet build $project.FullName --no-restore --configuration Release
+          }
