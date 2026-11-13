@@ -41,6 +41,7 @@ namespace CybersecurityChatbotGUI
 
             // Creates the final Part 3 GUI layout.
             BuildInterface();
+            AddQuizTab();
 
             // Connects the Part 2 delegate to the chat display method.
             cybot.ResponseHandler = DisplayBotMessage;
@@ -63,7 +64,7 @@ namespace CybersecurityChatbotGUI
 
         private void BuildInterface()
         {
-            Text = "Cybot - Cybersecurity Awareness Chatbot";
+        Text = "Cybot - Cybersecurity Awareness Chatbot";
             StartPosition = FormStartPosition.CenterScreen;
             MinimumSize = new Size(900, 650);
             Size = new Size(1100, 750);
